@@ -72,7 +72,7 @@ function removeFromCart(item) {
     }
   }
   catch (err){
-    
+    console.log
   }
 }
 
