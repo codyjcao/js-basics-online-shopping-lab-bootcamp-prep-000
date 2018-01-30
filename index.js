@@ -56,7 +56,7 @@ function total() {
   sum = 0
   
   for (var i in cart){
-    
+    Object
   }
   
   return sum
