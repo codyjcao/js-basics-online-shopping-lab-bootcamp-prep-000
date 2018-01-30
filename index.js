@@ -53,7 +53,7 @@ function viewCart() {
 
 function total() {
   // write your code here
-  sum = 0
+  var sum = 0
   
   for (var i in cart){
     sum += Object.values(i)[0]
