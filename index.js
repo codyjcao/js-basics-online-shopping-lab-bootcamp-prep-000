@@ -32,7 +32,8 @@ function viewCart() {
       statement += `${Object.keys(cart[0])[0]} at $${cart[0][Object.keys(cart[0])[0]]}.`
     }
     else if (cart.length === 2){
-      statement += `${Object.keys(cart[0])[0]} at $${cart[0][Object.keys(cart[0])[0]]} and ${Object.keys(cart[1])[0]} at $${cart[1][{Object.keys(cart[1])[0]}]}.`;
+      statement += `${Object.keys(cart[0])[0]} at $${cart[0][Object.keys(cart[0])[0]]} `
+      statement += `and ${Object.keys(cart[1])[0]} at $${cart[1][Object.keys(cart[1])[0]]}.`
     }
     else {
       for (var i = 0; i < cart.length; i++){
