@@ -55,8 +55,8 @@ function total() {
   // write your code here
   var sum = 0
   
-  for (var i in cart){
-    sum += Object.values(i)[0]
+  for (var i = 0; i < cart.length; i++){
+    sum += Object.values(cart[i])[0]
   }
   
   return sum
