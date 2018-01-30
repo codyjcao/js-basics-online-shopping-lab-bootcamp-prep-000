@@ -38,10 +38,10 @@ function viewCart() {
     else {
       for (var i = 0; i < cart.length; i++){
         if (i === cart.length - 1){
-          statement += `and ${Object.keys(cart[i])[0]} at ${cart[i][Object.keys(cart[i])[0]]}.`
+          statement += `and ${Object.keys(cart[i])[0]} at $${cart[i][Object.keys(cart[i])[0]]}.`
         }
         else {
-          statement += `${Object.keys(cart[i])[0]} at ${cart[i][Object.keys(cart[i])[0]]}, `
+          statement += `${Object.keys(cart[i])[0]} at $${cart[i][Object.keys(cart[i])[0]]}, `
         }
       }
     }
