@@ -28,16 +28,20 @@ function viewCart() {
   else{
     var statement = "In your cart, you have "
     
-    for (var i = 0; i < cart.length; i++){
-      
-      if (cart.length === 1){
-        statement += `${cart[i][0]} at $${cart[i][1]}.`
-      }
-      else if(i === cart.length - 1){
-        statement += `and ${cart[i][0]} at $${cart[i][1]}.`
-      }
-      else {
-        statement += `${cart[i][0]} at $${cart[i][1]}, `
+    if (cart.length === 1){
+      statement += `${cart[0][0]} at $${cart[0][1]}.`
+    }
+    else if (cart.length === 2){
+      statement += `${cart[0][0]} at $${cart[0][1]} and ${cart[1][0]} at $${cart[1][1]}.`
+    }
+    else {
+      for (var i = 0; i < cart.length; i++){
+        if (i === cart.length - 1){
+          statement += `and ${cart[i][0]} at ${cart[i][1]}.`
+        }
+        else {
+          statement += `${cart[i][0]} at $${cart[i][1]}, `
+        }
       }
     }
     console.log(statement)
