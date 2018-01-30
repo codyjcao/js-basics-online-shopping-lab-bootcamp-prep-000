@@ -29,7 +29,7 @@ function viewCart() {
     var statement = "In your cart, you have "
     
     if (cart.length === 1){
-      statement += `${Object.keys(cart[0])[0]} at $${cart[0][1]}.`
+      statement += `${Object.keys(cart[0])[0]} at $${cart[0][Object.keys(cart[0])[0]]}.`
     }
     else if (cart.length === 2){
       statement += `${cart[0][0]} at $${cart[0][1]} and ${cart[1][0]} at $${cart[1][1]}.`
