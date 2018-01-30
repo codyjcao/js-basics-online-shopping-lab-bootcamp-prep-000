@@ -65,7 +65,11 @@ function total() {
 function removeFromCart(item) {
   // write your code here
   try{
-    
+    for (var i = 0; i < cart.length; i++){
+      if (Object.keys(cart[i])[0] == item){
+        delete
+      }
+    }
   }
 }
 
